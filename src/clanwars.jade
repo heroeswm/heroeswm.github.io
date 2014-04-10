@@ -1,0 +1,18 @@
+extends layout
+
+block content
+	.path
+		a(href="/") Форумы
+		|  &rarr; 
+		a(href="/clanwars") Кланвары
+
+	.clanwars_wrapper(style="position: static")
+		canvas#clanwars(width=800, height=600)
+			| Пожалуйста, обновите свой браузер.
+		#clanwars_dialogs
+
+	script
+		require(['clanwars']);
+
+	noscript
+		| Поддержка javascript отключена.

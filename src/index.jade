@@ -1,0 +1,18 @@
+doctype html
+html(lang="ru")
+	head
+		title= "HWM Clan Wars"
+		meta(http-equiv="Content-Type", content="text/html; charset=utf-8")
+	body
+		.clanwars_wrapper(style="position: static")
+			canvas#clanwars(width=800, height=600)
+				| Пожалуйста, обновите свой браузер.
+			#clanwars_dialogs
+
+		link(rel='stylesheet', href='style.css')
+
+		script(src='bundle.js')
+		script require(['clanwars'])
+
+		noscript
+			| Поддержка javascript отключена.

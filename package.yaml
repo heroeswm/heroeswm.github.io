@@ -1,0 +1,11 @@
+name: clanwars
+version: 0.0.1
+author: Alex Kocharin
+
+devDependencies:
+  jade: '*'
+  coffee-script: '*'
+  uglify-js: '*'
+
+license: GPLv3
+
